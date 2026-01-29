@@ -2,7 +2,6 @@ USE BookStoreDB;
 GO
 
 
--- Drop Function
 IF OBJECT_ID('dbo.fn_BookCountByAuthor', 'FN') IS NOT NULL
     DROP FUNCTION dbo.fn_BookCountByAuthor;
 GO
@@ -96,3 +95,4 @@ GO
 
 SELECT dbo.fn_BookCountByAuthor('Paulo Coelho') AS TotalBooks;
 GO
+
